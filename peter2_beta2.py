@@ -114,12 +114,13 @@ try:
                     # loop to have questions
                 while True:
                     try:
-                        with sr.Microphone() as source2:
-                            r.adjust_for_ambient_noise(source2)
-                            audio2 = r.listen(source2)
-                            mytext = r.recognize_google(audio2)
-                            (mytext) = mytext.lower()
-                            print(Fore.LIGHTBLUE_EX + mytext)
+                        # with sr.Microphone() as source2:
+                        #     r.adjust_for_ambient_noise(source2)
+                        #     audio2 = r.listen(source2)
+                        #     mytext = r.recognize_google(audio2)
+                        #     (mytext) = mytext.lower()
+                        #     print(Fore.LIGHTBLUE_EX + mytext)
+                            listen()
                             # call peter
                             if "peter" in mytext:
                                 wishme()
